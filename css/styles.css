@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+head {
+    background-color: aquamarine;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "t t t"
+        "photo content content"
+        "a content content"
+        "a content content";
+}
+
+.grid-container>.grid_aside{
+    grid-area: a;
+    background-color: rgb(218, 175, 19);
+    padding: 10px;
+}
+.grid-container>.grid_title {
+    grid-area: t;
+    background-color: rgb(153, 153, 219);
+}
+
+
+.grid-container>.grid_image {
+    grid-area: photo;
+    background-color: rgb(218, 175, 19);
+}
+
+.grid_image img {
+    width: 100%;
+}
+
+.grid-container>.grid_content {
+    grid-area: content;
+    padding: 50px;
+    background-color: yellow;
+}
+
+
+.button_link {
+    display: block;
+    width: 200px;
+    padding: 5px;
+    background: blue;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+h1{ padding-left: 40px;}
+
+h1, h2{text-align: left;
+color:black;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.flex-container .flex-content {
+    margin: 16px;
+    text-align: center;
+    
+}
+
+
+.flex-content img {
+    width: 100%;
+}
+
+.name{
+    color: rgb(0, 0,0) ;
+    text-decoration: none;
+}
+
+@media all and (max-width:765px) {
+
+
+    .grid-container {
+        grid-template-areas:
+            "t"
+            "photo"
+            "a"
+            "content";
+    }
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.flex-container .flex-content {
+    margin: 0px;
+}
+
+
+
+}
+.logo{
+    width: 86px;
+
+}
